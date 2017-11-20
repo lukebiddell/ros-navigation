@@ -1,0 +1,10 @@
+Dependancies:
+
+sudo apt-get install gstreamer0.10-pocketsphinx
+sudo apt-get install ros-indigo-pocketsphinx
+sudo apt-get install ros-indigo-audio-common
+sudo apt-get install libasound2
+sudo apt-get install gstreamer0.10-gconf
+
+Pocket sphinx: http://wiki.ros.org/pocketsphinx
+Voice control guide: http://edu.gaitech.hk/turtlebot/speech-doc.html
