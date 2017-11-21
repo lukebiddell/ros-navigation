@@ -8,3 +8,6 @@ sudo apt-get install gstreamer0.10-gconf
 
 Pocket sphinx: http://wiki.ros.org/pocketsphinx
 Voice control guide: http://edu.gaitech.hk/turtlebot/speech-doc.html
+
+LMTool: http://www.speech.cs.cmu.edu/tools/lmtool-new.html
+Guide: https://cmusphinx.github.io/wiki/tutoriallm/

@@ -1,8 +1,11 @@
 <launch>
 
   <node name="recognizer" pkg="pocketsphinx" type="recognizer.py" output="screen">
-    <param name="lm" value="$(find speech_recognition)/src/speech.lm"/>
-    <param name="dict" value="$(find speech_recognition)/src/speech.dic"/>
+    <param name="lm" value="$(find speech_recognition)/src/language_models/9574.lm"/>
+    <param name="dict" value="$(find speech_recognition)/src/language_models/9574.dic"/>
+  </node>
+  
+  <node name="voice_op" pkg="speech_recognition" type="voice_op.py" output="screen">
   </node>
 
 </launch>

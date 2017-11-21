@@ -1,0 +1,61 @@
+Language model created by QuickLM on Mon Nov 20 18:11:18 EST 2017
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 5 sentences and 12 words
+
+\data\
+ngram 1=12
+ngram 2=15
+ngram 3=11
+
+\1-grams:
+-0.9243 </s> -0.3010
+-0.9243 <s> -0.2460
+-1.6232 AWAY -0.2460
+-1.6232 COME -0.2906
+-1.6232 FUN -0.2460
+-1.6232 GO -0.2906
+-1.6232 HERE -0.2460
+-1.6232 IS -0.2906
+-1.6232 ROBOTICS -0.2906
+-1.6232 START -0.2798
+-1.6232 STOP -0.2798
+-1.3222 STREAMING -0.2460
+
+\2-grams:
+-1.0000 <s> COME 0.0000
+-1.0000 <s> GO 0.0000
+-1.0000 <s> ROBOTICS 0.0000
+-1.0000 <s> START 0.0000
+-1.0000 <s> STOP 0.0000
+-0.3010 AWAY </s> -0.3010
+-0.3010 COME HERE 0.0000
+-0.3010 FUN </s> -0.3010
+-0.3010 GO AWAY 0.0000
+-0.3010 HERE </s> -0.3010
+-0.3010 IS FUN 0.0000
+-0.3010 ROBOTICS IS 0.0000
+-0.3010 START STREAMING 0.0000
+-0.3010 STOP STREAMING 0.0000
+-0.3010 STREAMING </s> -0.3010
+
+\3-grams:
+-0.3010 <s> COME HERE
+-0.3010 <s> GO AWAY
+-0.3010 <s> ROBOTICS IS
+-0.3010 <s> START STREAMING
+-0.3010 <s> STOP STREAMING
+-0.3010 COME HERE </s>
+-0.3010 GO AWAY </s>
+-0.3010 IS FUN </s>
+-0.3010 ROBOTICS IS FUN
+-0.3010 START STREAMING </s>
+-0.3010 STOP STREAMING </s>
+
+\end\
