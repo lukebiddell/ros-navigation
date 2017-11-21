@@ -6,6 +6,5 @@
   </node>
   
   <node name="voice_op" pkg="speech_recognition" type="voice_op.py" output="screen">
-  </node>
 
 </launch>

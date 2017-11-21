@@ -8,7 +8,7 @@ class RobotVoiceTeleop:
     #define the constructor of the class
     def  __init__(self):
         #initialize the ROS node with a name voice_teleop
-        rospy.init_node('voice_teleop')
+        rospy.init_node('voice_op')
 
         # Publish the Twist message to the cmd_vel topic
         self.cmd_vel_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=5)
@@ -29,7 +29,11 @@ class RobotVoiceTeleop:
 
         # A mapping from keywords or phrases to commands
         #we consider the following simple commands, which you can extend on your own
-        self.commands =             ['stop',
+        self.commands =        ['start-stream',
+                                'end-stream',
+                                'go-away',
+                                'come-here',
+                                'stop',
                                 'forward',
                                 'backward',
                                 'turn left',
@@ -46,7 +50,9 @@ class RobotVoiceTeleop:
         # Get the motion command from the recognized phrase
         command = msg.data
         if (command in self.commands):
-            if command == 'forward':
+            if command == 'start-stream':
+                #TODO
+            elif command == 'forward':
                 self.cmd_vel.linear.x = 0.2
                 self.cmd_vel.angular.z = 0.0
             elif command == 'backward':
